@@ -1,6 +1,6 @@
 {
   "name": "node-wifi-2.0",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "description": "NodeJS tool to manage wifi",
   "keywords": [
     "WPA3",
@@ -38,7 +38,8 @@
   },
   "dependencies": {
     "command-line-args": "^5.2.0",
-    "command-line-usage": "^6.1.1"
+    "command-line-usage": "^6.1.1",
+    "ping": "^0.4.4"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",

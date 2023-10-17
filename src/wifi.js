@@ -11,6 +11,7 @@ const macConnect = require('./mac-connect.js');
 const macScan = require('./mac-scan.js');
 const macDelete = require('./mac-delete');
 const macGetCurrentConnections = require('./mac-current-connections');
+const { connectionEvent } = require('./connectionEvent.js');
 
 const config = {
   debug: false,
@@ -70,6 +71,7 @@ function init(options) {
   exports.disconnect = disconnect;
   exports.deleteConnection = deleteConnection;
   exports.getCurrentConnections = getCurrentConnections;
+  exports.connectionEvent = connectionEvent;
 }
 
 exports.init = init;
@@ -90,5 +92,9 @@ exports.getCurrentConnections = () => {
 };
 
 exports.deleteConnection = () => {
+  throw new Error('ERROR : use init before');
+};
+
+exports.connectionEvent = () => {
   throw new Error('ERROR : use init before');
 };

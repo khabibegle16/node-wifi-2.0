@@ -9,13 +9,9 @@
 </p>
 </div>
 
-> We think about switching to ES Modules only for next major release. We would like to have your opinion on this. Please consider leave a comment in the [discussion thread](https://github.com/friedrith/node-wifi/discussions/170).
+> We think about switching to ES Modules only for next major release. We would like to have your opinion on this. Please consider leave a comment in the [discussion thread](https://github.com/khabibegle16/node-wifi-2.0/issues).
 
 **Note: this package is updated to connect WPA3 enabled ssid
-
-**I am looking for maintainers who could help me to handle all improvements and
-bug fixes about this project because the hardware/os dependencies make it quite
-hard to test.**
 
 The node-wifi module allows macOS, windows and linux users to interact with surrounding wifi networks through various methods. These methods include scanning for wifi access points and connecting to these access points.
 
@@ -31,7 +27,7 @@ The node-wifi module allows macOS, windows and linux users to interact with surr
 
 </div>
 
-We wish to be clear in saying that this module is inspired from [node-wifi-control](https://github.com/friedrith/node-wifi) the only changes we have made is related to WPA3 wifi security.
+We wish to be clear in saying that this module is inspired from [node-wifi-control](https://github.com/khabibegle16/node-wifi-2.0) the only changes we have made is related to WPA3 wifi security.
 
 > As everything with hardware dependencies, weird behaviors may happen depending of your configuration. You should never hesitate to notify us about a specificity of your OS/Hardware/Wifi card/whatever.
 
@@ -87,6 +83,12 @@ wifi.connect({ ssid: 'ssid', password: 'password' }, () => {
   // on windows, the callback is called even if the connection failed due to netsh limitations
   // if your software may work on windows, you should use `wifi.getCurrentConnections` to check if the connection succeeded
 });
+
+// connectionEvent
+// check connection status contineously
+wifi.connectionEvent.on("check_connection",(connectionStatus)=>{
+  console.log("connectionStatus==",connectionStatus)
+})
 
 // Disconnect from a network
 // not available on all os for now
@@ -149,7 +151,7 @@ wifi
 
 ## Use as CLI
 
-`node-wifi` is also usable as a CLI tool with the library [node-wifi-cli](https://github.com/friedrith/node-wifi-cli).
+`node-wifi` is also usable as a CLI tool with the library [node-wifi-cli](https://github.com/khabibegle16/node-wifi-2.0-cli).
 
 ## Platforms compatibility
 
