@@ -9,13 +9,13 @@ wifi.init({
 });
 
 // const ap = {
-//   ssid: 'Sourabh',
-//   password: "Jakepaul16$%"
+//   ssid: '',
+//   password: ""
 // };
 
 const ap = {
-  ssid: '1',
-  password: "jakepaul16"
+  ssid: '',
+  password: ""
 };
 
 
