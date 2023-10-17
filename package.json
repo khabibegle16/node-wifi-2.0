@@ -1,23 +1,26 @@
 {
-  "name": "node-wifi",
-  "version": "2.0.16",
+  "name": "node-wifi-2.0",
+  "version": "3.1.0",
   "description": "NodeJS tool to manage wifi",
   "keywords": [
+    "WPA3",
+    "wifi WPA3",
     "wifi",
     "multiplatform",
     "node"
   ],
   "author": "Thibault Friedrich",
   "contributors": [
-    "Thibault Friedrich <thibault.friedrich@gmail.com> (https://thibaultfriedrich.io)"
+    "Thibault Friedrich <thibault.friedrich@gmail.com> (https://thibaultfriedrich.io)",
+    "khabibegle16@gmail.com"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/friedrith/node-wifi.git"
+    "url": "git@github.com:khabibegle16/node-wifi-2.0.git"
   },
   "bugs": {
-    "url": "https://github.com/friedrith/node-wifi/issues"
+    "url": "https://github.com/khabibegle16/node-wifi-2.0/issues"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

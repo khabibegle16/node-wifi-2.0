@@ -11,6 +11,8 @@
 
 > We think about switching to ES Modules only for next major release. We would like to have your opinion on this. Please consider leave a comment in the [discussion thread](https://github.com/friedrith/node-wifi/discussions/170).
 
+**Note: this package is updated to connect WPA3 enabled ssid
+
 **I am looking for maintainers who could help me to handle all improvements and
 bug fixes about this project because the hardware/os dependencies make it quite
 hard to test.**
@@ -29,7 +31,7 @@ The node-wifi module allows macOS, windows and linux users to interact with surr
 
 </div>
 
-We wish to be clear in saying that this module is inspired from [node-wifi-control](https://github.com/msolters/wifi-control-node) but with some slight modifications to certain functions such as the various OS-specific parsers for terminal output as we noticed that these parsers did not work well on certain operating systems.
+We wish to be clear in saying that this module is inspired from [node-wifi-control](https://github.com/friedrith/node-wifi) the only changes we have made is related to WPA3 wifi security.
 
 > As everything with hardware dependencies, weird behaviors may happen depending of your configuration. You should never hesitate to notify us about a specificity of your OS/Hardware/Wifi card/whatever.
 
@@ -39,13 +41,13 @@ We wish to be clear in saying that this module is inspired from [node-wifi-contr
 
 ```bash
 # Use as a module
-npm install node-wifi
+npm install node-wifi-2.0
 ```
 
 ## Getting started
 
 ```javascript
-const wifi = require('node-wifi');
+const wifi = require('node-wifi-2.0');
 
 // Initialize wifi module
 // Absolutely necessary even to set interface to null
